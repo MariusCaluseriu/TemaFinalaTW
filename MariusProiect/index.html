@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8cb10c4a30.js" crossorigin="anonymous"></script>
+    <title>Festivalul de Ping-Pong</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div>
+    <!--HEADER SECTION-->
+    <header>
+      <nav>
+        <div class="logo"><i class="fa-solid fa-table-tennis-paddle-ball"></i>Sport</div>
+        <div class="nav-items">
+          <li><a href="#program">Program</a></li>
+          <li><a href="#harta">Contact</a></li>
+        </div>
+      </nav>
+    </header>
+
+    <!--HERO SECTION -->
+    <div class="hero-section">
+      <div class="container hero">
+        <h1 data-speed = "7" class="layer">Festivalul de Sport</h1>
+        <p data-speed = "5" class="layer">Participă la cel mai mare festival de sport din țară</p>
+        <img src="Images/logo2.png" width="100px" data-speed = "-2" class="layer">
+      </div>
+    </div>
+
+    <!--PROGRAM SECTION-->
+    <div class="container" id="program">
+      <div class="row text-left ">
+        <div class="col-sm-3 textLeft ">
+          <p> Acest festival este dedicat tuturor pasionaților de sport și oferă o gamă largă de activități. Festivalul de Sport se va încheia cu o ceremonie de închidere, unde se vor acorda premiile și se vor face anunțuri speciale. Festivalul de Sport este un eveniment care nu trebuie ratat, o oportunitate unică de a vedea și de a experimenta unele dintre cele mai interesante sporturi din lume.</p>
+        </div>
+
+        <!--Clasa col-sm-3 este o clasa di bootstrap cu care am creat un grid pe 4 coloane
+        Din display block se tranforma in displat flex pentru a incapea in ecran-->
+        <div class="col-sm-3 ">
+          <h2>Ziua 1</h2>
+          <ul>
+            <li>Ora 10:00: Prezentarea sportivilor și a echipelor.</li>
+            <li>Ora 11:00: Competiții de fotbal și volei pe plajă.</li>
+            <li>Ora 14:00: Pauză de prânz.</li>
+            <li>Ora 15:00: Competiții de baschet și tenis de masă.</li>
+            <li>Ora 18:00: Închiderea zilei.</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 ">
+          <h2>Ziua 2</h2>
+          <ul>
+            <li>Ora 9:00: Competiții de alergare și ciclism.</li>
+            <li>Ora 11:00: Concurs de ping pong (individual,echipe).</li>
+            <li>Ora 14:00: Pauză de prânz.</li>
+            <li>Ora 15:00: Competiții de scrimă și karate.</li>
+            <li>Ora 18:00: Închiderea zilei.</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 ">
+          <h2>Ziua 3</h2>
+          <ul>
+            <li>Ora 10:00: Competiții de înot și polo pe apă.</li>
+            <li>Ora 12:00: Demonstrări de dans și gimnastică.</li>
+            <li>Ora 14:00: Pauză de prânz.</li>
+            <li>Ora 15:00: Competiții de box și lupte.</li>
+            <li>Ora 18:00: Ceremonia de închidere a festivalului.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--CONTACT AND MAP SECTION-->
+<!--Clasa container si clasa row sunt clase din bootstrap care afiseaza elementele grupate-->
+    <div class="container contact" >
+      <!--FORMULAR DE INSCRIERE-->
+      <div class="row">
+        <div class="col-md-6" id=formular-inscriere>
+          <h2>Înscriere la festivalul de sport</h2>
+          <form>
+            <div class="form-group">
+              <label for="nume">Nume si Prenume:</label>
+              <input type="text" class="form-control" id="nume" required>
+            </div>
+
+            <div class="form-group">
+              <label for="prenume">Coechipier(daca este cazul):</label>
+              <input type="text" class="form-control" id="coechipier" required>
+            </div>
+
+            <div class="form-group">
+              <label for="varsta">Sport:</label>
+              <input type="text" class="form-control" id="sport" required>
+            </div>
+
+            <div class="form-group">
+              <label for="telefon">Telefon:</label>
+              <input type="text" class="form-control" id="telefon" required>
+            </div>
+
+            <div class="form-group">
+              <label for="telefon">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            
+            <!--button din bootstrap>-->
+            <button type="submit" class="btn btn-primary">Înscrie-te</button>
+          </form>
+        </div>
+
+        <!--HARTA-->
+        <div class="col-md-6" id="harta">
+          <h2>Hartă</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45699.574654544005!2d23.82922!3d44.284794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d7ca9be6cb03%3A0xc9f6876a82360564!2sNicolae%20Romanescu%20Park!5e0!3m2!1sen!2sro!4v1682348471289!5m2!1sen!2sro" width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="Images/poza2.jpg" alt="" class="img-responsive">
+
+        </div>
+        <div class="col-md-6">
+            <img src="Images/poza1.png" alt="" class="img-responsive">
+        </div>
+
+      </div>
+    </div>
+    
+    <!--FOOTER SECTION-->
+    <div class="container footer">
+      <div class="row">
+        <div class="col-md-6">
+            <h3><img src="Images/logo2.png" width="60px">Sport Festival</h3>
+            <p>&copy; Copyright by Marius.All right reserved!</p>
+        </div>
+
+        <div class="col-md-6 contact ">
+          <h3>Adresa</h3>
+          <div>
+            <span class="fas fa-map-marker-alt"></span>
+            <span>Craiova,Dolj</span>
+          </div>  
+          
+          <div>
+            <span class="fas fa-envelope"></span>
+            <span>sport2023@gmail.com</span>
+          </div>
+
+          <div>
+            <span class="fas fa-phone-alt"></span>
+            <span>076 876 4815</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

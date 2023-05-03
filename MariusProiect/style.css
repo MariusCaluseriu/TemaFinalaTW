@@ -1,0 +1,137 @@
+* {
+    margin: 0  ;
+    padding: 0 ;
+    box-sizing: border-box ;
+}
+  
+html {
+  font-size: 62.5% ; /* 1rem = 10px */
+}
+
+body{
+  background-color: #1C82AD;
+}
+
+.hero-section {
+  background-color: #1C82AD;
+  height: 60vh; /*inaltimea sectiunii hero*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; /*culoare text*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /*linia de sub hero section*/
+}
+  
+.container{
+    text-align: center; /*elementele din hero sunt centrate pe mijloc*/
+}
+
+
+/*HEADER STYLE*/
+nav {
+  background: #1C82AD;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*DISTANTA DINTRE ELEMENTELE NAV-ULUI*/
+  height: 7rem;    /*INALTIME NAV*/
+  padding: 0 10rem; /*DISTANTA NAV DE LA MARGINEA DIN STANGA A PAGINII*/
+  position: fixed; /*FACE CA NAV SA RAMANA FIX CAND DAM SCROLL*/
+  width: 100%; /*OCUPA TOATA LATIMEA PAGINII*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /*LINIA DE SUB NAV*/
+  z-index: 9999; /*FACE CA NAV SA SE AFISEZE PESTE ORICE ELEMENT DIN PAGINA*/
+}
+
+/*logo si text "Sport"*/
+nav .logo {
+  color: black;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+nav .nav-items {
+  display: flex; /*AFISEAZA ELEMENTELE PE O SINGURA LINIE*/
+  flex: 1;
+  list-style: none;
+  padding: 0 0 0 7rem;
+}
+
+nav .nav-items li {
+  padding: 0 2rem;
+}
+
+nav .nav-items li a {
+  color: black;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-decoration: none; /*DISPARE LINIA DE SUB LINK*/
+}
+
+
+/*SCHIMBA CULOAREA CAND MOUSE-UL ESTE PUS ASUPRA UNUI ELEMENT DIN NAV*/
+nav .nav-items li a:hover {
+  color: rgb(173, 183, 196);
+}
+
+
+
+@media(max-width:722px){
+  nav .logo{
+    position: absolute;
+    left: 50%;
+    height:7.5rem; /* înălțimea logo-ului */
+    transform: translateX(-50%);
+  } 
+
+  nav .nav-items {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    margin-top: 3rem; /* distanța dintre logo și elementele de navigație */
+
+  }
+}
+
+
+.col-sm-3 li {
+  list-style: none;  
+  margin-bottom: 0.5rem; /*distanta dintre elementele listei*/
+}
+
+/*distanta descrierii fata de hero section*/
+.textLeft{
+  padding-top: 2.5rem;
+}
+
+/* marimea textului din program*/
+.col-sm-3{
+  font-size: 1.7rem;
+}
+
+
+label{
+  font-size: 1.7rem;
+}
+
+
+
+.footer{
+  background-color: #14181f;
+  color: #ddd;
+  width: 100%;
+  margin-top: 3rem;
+  padding-top: 4rem ;
+  padding-bottom: 5rem;
+}
+
+
+
+/*iconitele din footer*/
+.fas {
+  font-size: 1.5rem;
+  height: 3rem; /*inaltimea acestora*/
+  cursor: pointer; /*schimba sageata de la mouse */
+}
+
+
+
+ 
